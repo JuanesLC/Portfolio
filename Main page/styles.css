@@ -1,0 +1,180 @@
+:root {
+    --color1: #74d680;
+    --color2: #FAEED1;
+    --color3: #ffffff;
+    --color4: #161A30;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 25rem;
+    animation: NavAnimation 1.5s ease-in-out 0s 1 alternate forwards;
+}
+
+@keyframes NavAnimation {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+.navbar h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.list_items{
+    display: flex;
+    gap: 4rem;
+    
+}
+.list_items li{
+    list-style: none;
+    transition: transform 0.4s;
+    
+}
+
+.list_items li:hover {
+    transform: scale(1.2);
+}
+
+
+.list_items li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    
+}
+
+
+
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 819px;
+}
+
+ .content_left {
+    margin: 20rem 25rem;
+    border-radius: 5%;
+    color: #ffffff;
+    height: 400px;
+    background: radial-gradient(#000000 0%, #1e2d3e 100%);
+
+}
+
+.content_left img{
+    margin-bottom: 2rem;
+    
+   
+}
+
+
+.content_left button{
+    width: 120px;
+    height: 60px;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+    color: inherit;
+    
+    margin-left: 5.8rem;
+    
+   
+}
+
+.content_left button:hover {
+    transform: scale(1.2);
+}
+
+.content_right {
+    height: 400px;
+    border-radius: 10% 4%;
+    margin-right: 10rem;
+    text-align: center;
+    background: radial-gradient(#000000 0%, #1e2d3e 100%);
+    color: #ffffff;
+    animation: myAnim 2s ease-in-out 0s 1 alternate forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.content_right h3 {
+   font-size: 30px;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_right p {
+    margin: 4rem 7.5rem;
+    font-size: 20px;
+}  
