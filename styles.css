@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@700&family=Lexend+Deca:wght@400;700&family=Noto+Serif:wght@300&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+
+
+:root {
+    --color1: #74d680;
+    --color2: #FAEED1;
+    --color3: #ffffff;
+    --color4: #161A30;
+    --color5: #2a6c9b;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, #0d0c0c 0%, #235276 100%);
+    color: var(--color3);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(0deg, #0d0c0c 0%, #235276 0%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding: 0 25rem;
+    animation: NavAnimation 1.5s ease-in-out 0s 1 alternate forwards;
+}
+
+
+.navbar h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.list_items{
+    display: flex;
+    gap: 4rem;
+    
+}
+.list_items li{
+    list-style: none;
+    transition: transform 0.4s;
+    
+}
+
+.list_items li:hover {
+    transform: scale(1.2);
+}
+
+
+.list_items li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+.card_container{
+    background-color: #2a6c9b;
+    margin: 10rem;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 2rem;
+}
+
+.content_left{
+    background-color: var(--color4);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.content_right{
+    
+    max-height: 300px;
+    max-width: 500px;
+}
+.content_right h2{
+    font-size: 40px;
+}
+.content_right h3{
+    font-size: 25px;
+}
+
+.content_right p{
+    font-size: 20px;
+    margin-top: 3rem;
+    
+}
+
+.content_right button{
+    margin-top: 3rem;
+    margin-left: 10rem;
+
+    height: 40px;
+    width: 120px;
+    border-radius: 1rem;
+    border-style: none;
+    cursor: pointer;
+}
+
